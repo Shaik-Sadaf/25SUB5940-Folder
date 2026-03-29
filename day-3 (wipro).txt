@@ -1,0 +1,892 @@
+sadaf@DESKTOP-DB77T0U:/mnt/c/Windows/system32$ cd /etc
+sadaf@DESKTOP-DB77T0U:/etc$ pwd
+/etc
+sadaf@DESKTOP-DB77T0U:/etc$ cat /etc/os-release
+PRETTY_NAME="Ubuntu 24.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.1 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+sadaf@DESKTOP-DB77T0U:/etc$ whoami
+sadaf
+sadaf@DESKTOP-DB77T0U:/etc$
+============================================================================
+				TASK-1(Check Linux version)
+sadaf@DESKTOP-DB77T0U:/etc$ uname -a
+Linux DESKTOP-DB77T0U 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+sadaf@DESKTOP-DB77T0U:/etc$ cat /etc/os-release
+PRETTY_NAME="Ubuntu 24.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.1 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+sadaf@DESKTOP-DB77T0U:/etc$
+=============================================================================================
+				TASKE-2( Navigate directories)
+sadaf@DESKTOP-DB77T0U:/etc$ pwd
+/etc
+ls -l
+ls -l
+-rw-r----- 1 root shadow      801 Mar 27 05:39 shadow-
+-rw-r--r-- 1 root root        132 Jan  6  2025 shells
+drwxr-xr-x 2 root root       4096 Jan  6  2025 skel
+drwxr-xr-x 3 root root       4096 Jan  6  2025 ssh
+drwxr-xr-x 4 root root       4096 Jan  6  2025 ssl
+-rw-r--r-- 1 root root         36 Mar 27 08:38 subgid
+-rw-r--r-- 1 root root         19 Mar 27 05:39 subgid-
+-rw-r--r-- 1 root root         36 Mar 27 08:38 subuid
+-rw-r--r-- 1 root root         19 Mar 27 05:39 subuid-
+-rw-r--r-- 1 root root       4343 Apr  8  2024 sudo.conf
+-rw-r--r-- 1 root root       9804 Apr  8  2024 sudo_logsrvd.conf
+-r--r----- 1 root root       1800 Jan 29  2024 sudoers
+drwxr-xr-x 2 root root       4096 Jan  6  2025 sudoers.d
+drwxr-xr-x 2 root root       4096 Jan  6  2025 supercat
+-rw-r--r-- 1 root root       2209 Mar 24  2024 sysctl.conf
+drwxr-xr-x 2 root root       4096 Jan  6  2025 sysctl.d
+drwxr-xr-x 6 root root       4096 Jan  6  2025 systemd
+drwxr-xr-x 2 root root       4096 Jan  6  2025 terminfo
+-rw-r--r-- 1 root root          8 Jan  6  2025 timezone
+drwxr-xr-x 2 root root       4096 Apr 19  2024 tmpfiles.d
+drwxr-xr-x 2 root root       4096 Jan  6  2025 ubuntu-advantage
+-rw-r--r-- 1 root root       1260 Jan 27  2023 ucf.conf
+drwxr-xr-x 4 root root       4096 Jan  6  2025 udev
+drwxr-xr-x 3 root root       4096 Jan  6  2025 update-manager
+drwxr-xr-x 2 root root       4096 Jan  6  2025 update-motd.d
+lrwxrwxrwx 1 root root         16 Jan  6  2025 vconsole.conf -> default/keyboard
+drwxr-xr-x 2 root root       4096 Jan  6  2025 vim
+lrwxrwxrwx 1 root root         23 Feb 26  2024 vtrgb -> /etc/alternatives/vtrgb
+drwxr-xr-x 5 root root       4096 Jan  6  2025 vulkan
+-rw-r--r-- 1 root root       4942 Jun 19  2024 wgetrc
+-rw-r--r-- 1 root root         20 Jan  6  2025 wsl.conf
+-rw-r--r-- 1 root root        681 Apr  8  2024 xattr.conf
+drwxr-xr-x 5 root root       4096 Jan  6  2025 xdg
+drwxr-xr-x 2 root root       4096 Jan  6  2025 xml
+-rw-r--r-- 1 root root        460 Jan 20  2023 zsh_command_not_found
+sadaf@DESKTOP-DB77T0U:/etc$
+sadaf@DESKTOP-DB77T0U:/etc$ cd /var/log
+sadaf@DESKTOP-DB77T0U:/var/log$ pwd
+/var/log
+sadaf@DESKTOP-DB77T0U:/var/log$
+sadaf@DESKTOP-DB77T0U:/var/log$ ls
+README            apt       bootstrap.log  dist-upgrade  dmesg.0     dmesg.2.gz  dpkg.log  fontconfig.log  kern.log   lastlog  syslog               wtmp
+alternatives.log  auth.log  btmp           dmesg         dmesg.1.gz  dmesg.3.gz  faillog   journal         landscape  private  unattended-upgrades
+sadaf@DESKTOP-DB77T0U:/var/log$
+==========================================================================================================================
+							TASK-3 (Explore the file system)
+sadaf@DESKTOP-DB77T0U:/var/log$ cat /proc/version
+Linux version 6.6.87.2-microsoft-standard-WSL2 (root@439a258ad544) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025
+sadaf@DESKTOP-DB77T0U:/var/log$ cat /proc/cpuinfo
+processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 61
+model name      : Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+stepping        : 4
+microcode       : 0xffffffff
+cpu MHz         : 2194.917
+cache size      : 3072 KB
+physical id     : 0
+siblings        : 4
+core id         : 0
+cpu cores       : 2
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 20
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch pti ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap xsaveopt md_clear flush_l1d arch_capabilities
+bugs            : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_unknown bhi
+bogomips        : 4389.83
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 39 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 61
+model name      : Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+stepping        : 4
+microcode       : 0xffffffff
+cpu MHz         : 2194.917
+cache size      : 3072 KB
+physical id     : 0
+siblings        : 4
+core id         : 0
+cpu cores       : 2
+apicid          : 1
+initial apicid  : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 20
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch pti ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap xsaveopt md_clear flush_l1d arch_capabilities
+bugs            : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_unknown bhi
+bogomips        : 4389.83
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 39 bits physical, 48 bits virtual
+power management:
+
+processor       : 2
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 61
+model name      : Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+stepping        : 4
+microcode       : 0xffffffff
+cpu MHz         : 2194.917
+cache size      : 3072 KB
+physical id     : 0
+siblings        : 4
+core id         : 1
+cpu cores       : 2
+apicid          : 2
+initial apicid  : 2
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 20
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch pti ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap xsaveopt md_clear flush_l1d arch_capabilities
+bugs            : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_unknown bhi
+bogomips        : 4389.83
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 39 bits physical, 48 bits virtual
+power management:
+
+processor       : 3
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 61
+model name      : Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+stepping        : 4
+microcode       : 0xffffffff
+cpu MHz         : 2194.917
+cache size      : 3072 KB
+physical id     : 0
+siblings        : 4
+core id         : 1
+cpu cores       : 2
+apicid          : 3
+initial apicid  : 3
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 20
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch pti ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap xsaveopt md_clear flush_l1d arch_capabilities
+bugs            : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_unknown bhi
+bogomips        : 4389.83
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 39 bits physical, 48 bits virtual
+power management:
+
+sadaf@DESKTOP-DB77T0U:/var/log$
+=======================================================================================================================================================
+								TASK-4( Create directories and files)
+sadaf@DESKTOP-DB77T0U:/var/log$ mkdir myfolder
+mkdir: cannot create directory ‘myfolder’: Permission denied
+sadaf@DESKTOP-DB77T0U:/var/log$ cd ~
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ cd /etc
+sadaf@DESKTOP-DB77T0U:/etc$ mkdir myfolder
+mkdir: cannot create directory ‘myfolder’: Permission denied
+sadaf@DESKTOP-DB77T0U:/etc$ cd ~
+sadaf@DESKTOP-DB77T0U:~$ mkdir myfolder
+mkdir: cannot create directory ‘myfolder’: File exists
+sadaf@DESKTOP-DB77T0U:~$ mkdir myfolder1
+sadaf@DESKTOP-DB77T0U:~$ cd myfolder
+-bash: cd: myfolder: Not a directory
+sadaf@DESKTOP-DB77T0U:~$ cd myfolder1
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ touch file1.txt file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ ls
+file1.txt  file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$
+=======================================================================================================================================================
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ sudo -i
+\udcb9\udcadsudo: command not found
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ sudo su
+[sudo] password for sadaf:
+root@DESKTOP-DB77T0U:/home/sadaf/myfolder1# exit
+exit
+sadaf@DESKTOP-DB77T0U:~/myfolder1$
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ /
+-bash: /: Is a directory
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ pwd
+/home/sadaf/myfolder1
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ ls
+file1.txt  file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ ls -l
+total 0
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 15:04 file1.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 15:04 file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 15:04 file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ ls -a
+.  ..  file1.txt  file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ ls -lh
+total 0
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 15:04 file1.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 15:04 file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ ls -la
+total 8
+drwxr-xr-x 2 sadaf sadaf 4096 Mar 28 15:04 .
+drwxr-x--- 4 sadaf sadaf 4096 Mar 28 15:01 ..
+-rw-r--r-- 1 sadaf sadaf    0 Mar 28 15:04 file1.txt
+-rw-r--r-- 1 sadaf sadaf    0 Mar 28 15:04 file2.txt
+sadaf@DESKTOP-DB77T0U:~/myfolder1$
+=======================================================================================================================================================
+								Absolute vs Relative Path
+EXERCISE-1
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ pwd
+/home/sadaf/myfolder1
+sadaf@DESKTOP-DB77T0U:~/myfolder1$ cd ..
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ mkdir -p ~/lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~$ touch ~/lab/dir1/dir2/file.txt
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ cd /home/sadaf/lab/dir1/dir2(ABSOLUTE PATH) TO dir2	
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ pwd
+/home/sadaf/lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ cd ..
+sadaf@DESKTOP-DB77T0U:~/lab/dir1$ pwd
+/home/sadaf/lab/dir1
+sadaf@DESKTOP-DB77T0U:~/lab/dir1$ cd ~
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ cd lab/dir1/dir2(RELATIVE PATH)TO dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ pwd
+/home/sadaf/lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$
+======================================
+Exercise 2
+Current Directory
+/home/student/lab/dir1
+
+Go to dir2 using relative path
+
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ pwd
+/home/sadaf/lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ cd ..
+sadaf@DESKTOP-DB77T0U:~/lab/dir1$ pwd
+/home/sadaf/lab/dir1
+sadaf@DESKTOP-DB77T0U:~/lab/dir1$ cd /dir2
+-bash: cd: /dir2: No such file or directory
+sadaf@DESKTOP-DB77T0U:~/lab/dir1$ cd dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ pwd
+/home/sadaf/lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$
+=========================================
+Exercise 3
+Current Directory
+/home/student/lab/dir1/dir2
+
+Go back to lab
+
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ pwd
+/home/sadaf/lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ cd ../..
+sadaf@DESKTOP-DB77T0U:~/lab$ pwd
+/home/sadaf/lab
+sadaf@DESKTOP-DB77T0U:~/lab$
+=====================================
+Exercise 4
+Current Directory
+/home/student
+Open file using:
+(Absolute path)
+sadaf@DESKTOP-DB77T0U:~/lab$ cd ~
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ cd /home/sadaf/lab/dir1/dir2/file.txt
+-bash: cd: /home/sadaf/lab/dir1/dir2/file.txt: Not a directory
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ cat /home/sadaf/lab/dir1/dir2/file.txt
+
+(Relative path)
+
+sadaf@DESKTOP-DB77T0U:~$ cd ~
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ cat lab/dir1/dir2/file.txt
+sadaf@DESKTOP-DB77T0U:~$
+=========================================================================
+Exercise 5 (Important)
+
+From anywhere in system:
+Go to home directory
+
+
+sadaf@DESKTOP-DB77T0U:~$ pwd
+/home/sadaf
+sadaf@DESKTOP-DB77T0U:~$ cd lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ pwd
+/home/sadaf/lab/dir1/dir2
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$
+============================================================================================================================================
+							
+						Creating and Removing Directories
+
+Hands-On Exercises 
+Exercise 1
+
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ mkdir linux_lab
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2$ cd linux_lab
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ pwd
+/home/sadaf/lab/dir1/dir2/linux_lab
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ touch a.txt b.txt c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ pwd
+/home/sadaf/lab/dir1/dir2/linux_lab
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls -l
+total 0
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:34 a.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:34 b.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:34 c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$
+
+======================================
+Exercise 2
+
+
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ mkdir backup
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ pwd
+/home/sadaf/lab/dir1/dir2/linux_lab
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ cp *.txt bckup/
+cp: target 'bckup/': No such file or directory
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ cp *.txt backup/
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls backup
+a.txt  b.txt  c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls -l backup
+total 0
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 a.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 b.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$
+======================================
+Exercise 3
+
+
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ mkdir backup
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ pwd
+/home/sadaf/lab/dir1/dir2/linux_lab
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ cp *.txt bckup/
+cp: target 'bckup/': No such file or directory
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ cp *.txt backup/
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls backup
+a.txt  b.txt  c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls -l backup
+total 0
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 a.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 b.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ mv a.txt alpha.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls backup
+a.txt  b.txt  c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls -l
+total 4
+-rw-r--r-- 1 sadaf sadaf    0 Mar 28 16:34 alpha.txt
+-rw-r--r-- 1 sadaf sadaf    0 Mar 28 16:34 b.txt
+drwxr-xr-x 2 sadaf sadaf 4096 Mar 28 16:39 backup
+-rw-r--r-- 1 sadaf sadaf    0 Mar 28 16:34 c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls -l backup
+total 0
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 a.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 b.txt
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 16:39 c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ rm b.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls backup
+a.txt  b.txt  c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls linux_lab
+ls: cannot access 'linux_lab': No such file or directory
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls
+alpha.txt  backup  c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$
+===========================================================
+Exercise 4 (Wildcards)
+
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ touch test1.log test2.log test3.log
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls
+alpha.txt  backup  c.txt  test1.log  test2.log  test3.log
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls *.log
+test1.log  test2.log  test3.log
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls -l *.log
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 17:39 test1.log
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 17:39 test2.log
+-rw-r--r-- 1 sadaf sadaf 0 Mar 28 17:39 test3.log
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ rm test?.log
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls
+alpha.txt  backup  c.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$
+===========================================================
+Exercise 5 (Directory Handling)
+
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ mkdir -p project/src/docs
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ cp alpha.txt project/src/docs
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls
+alpha.txt  backup  c.txt  project
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ pd
+pd: command not found
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ pwd
+/home/sadaf/lab/dir1/dir2/linux_lab
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls project/src/docs
+alpha.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ ls -R project
+project:
+src
+
+project/src:
+docs
+
+project/src/docs:
+alpha.txt
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$
+==============================================================================================================================================
+						 Working with Files & Text Editors (Linux)
+
+Viewing File Contents (Read-only Operations)
+
+
+Exercise-1
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ cat etc/os-release
+cat: etc/os-release: No such file or directory
+sadaf@DESKTOP-DB77T0U:~/lab/dir1/dir2/linux_lab$ cd ~
+sadaf@DESKTOP-DB77T0U:~$ cat etc/os-relaese
+cat: etc/os-relaese: No such file or directory
+sadaf@DESKTOP-DB77T0U:~$ cat /etc/os-release
+PRETTY_NAME="Ubuntu 24.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.1 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+sadaf@DESKTOP-DB77T0U:~$ head -n 5 etc/passwd
+head: cannot open 'etc/passwd' for reading: No such file or directory
+sadaf@DESKTOP-DB77T0U:~$ head -n 5/etc/passwd
+head: invalid number of lines: ‘5/etc/passwd’
+sadaf@DESKTOP-DB77T0U:~$ head -n 5 /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+sadaf@DESKTOP-DB77T0U:~$ tail -n 5/etc/passwd
+tail: invalid number of lines: ‘5/etc/passwd’
+sadaf@DESKTOP-DB77T0U:~$ tail -n 5 /etc/passwd
+uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+landscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin
+polkitd:x:990:990:User for polkitd:/:/usr/sbin/nologin
+sadaf:x:1000:1000:,,,:/home/sadaf:/bin/bash
+ram:x:1001:1001:ram,50,8888888888,6666666666,NA:/home/ram:/bin/bash
+sadaf@DESKTOP-DB77T0U:~$ less etc/services
+etc/services: No such file or directory
+sadaf@DESKTOP-DB77T0U:~$ less /etc/services
+# Network services, Internet style
+#
+# Updated from https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml .
+#
+# New ports will be added on request if they have been officially assigned
+# by IANA and used in the real-world or are needed by a debian package.
+# If you need a huge list of used numbers please install the nmap package.
+
+tcpmux          1/tcp                           # TCP port service multiplexer
+echo            7/tcp
+echo            7/udp
+discard         9/tcp           sink null
+discard         9/udp           sink null
+systat          11/tcp          users
+daytime         13/tcp
+daytime         13/udp
+netstat         15/tcp
+qotd            17/tcp          quote
+chargen         19/tcp          ttytst source
+chargen         19/udp          ttytst source
+ftp-data        20/tcp
+ftp             21/tcp
+fsp             21/udp          fspd
+ssh             22/tcp                          # SSH Remote Login Protocol
+telnet          23/tcp
+smtp            25/tcp          mail
+time            37/tcp          timserver
+time            37/udp          timserver
+whois           43/tcp          nicname
+tacacs          49/tcp                          # Login Host Protocol (TACACS)
+tacacs          49/udp
+domain          53/tcp                          # Domain Name Server
+domain          53/udp
+bootps          67/udp
+bootpc          68/udp
+tftp            69/udp
+gopher          70/tcp                          # Internet Gopher
+finger          79/tcp
+http            80/tcp          www             # WorldWideWeb HTTP
+kerberos        88/tcp          kerberos5 krb5 kerberos-sec     # Kerberos v5
+kerberos        88/udp          kerberos5 krb5 kerberos-sec     # Kerberos v5
+iso-tsap        102/tcp         tsap            # part of ISODE
+acr-nema        104/tcp         dicom           # Digital Imag. & Comm. 300
+pop3            110/tcp         pop-3           # POP version 3
+sunrpc          111/tcp         portmapper      # RPC 4.0 portmapper
+sunrpc          111/udp         portmapper
+auth            113/tcp         authentication tap ident
+nntp            119/tcp         readnews untp   # USENET News Transfer Protocol
+ntp             123/udp                         # Network Time Protocol
+:
+
+=========================================================================
+Searching Inside Files – grep
+Exercise-2
+
+
+sadaf@DESKTOP-DB77T0U:~$ grep root/etc/passwd
+^C
+sadaf@DESKTOP-DB77T0U:~$ grep root /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+sadaf@DESKTOP-DB77T0U:~$ grep -n bash /etc/passwd
+1:root:x:0:0:root:/root:/bin/bash
+28:sadaf:x:1000:1000:,,,:/home/sadaf:/bin/bash
+29:ram:x:1001:1001:ram,50,8888888888,6666666666,NA:/home/ram:/bin/bash
+sadaf@DESKTOP-DB77T0U:~$ grep -R network /etc
+/etc/rc3.d/S01cron:# Should-Start:      $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/rc3.d/S01cron:# Should-Stop:       $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/rcS.d/S01procps:# X-Start-Before:    $network
+/etc/xdg/systemd/user/sockets.target.wants/dirmngr.socket:Description=GnuPG network certificate management daemon
+/etc/group-:systemd-network:x:998:
+/etc/nsswitch.conf:networks:       files
+/etc/group:systemd-network:x:998:
+/etc/security/access.conf:# matches the (user, host) combination, or, in case of non-networked
+/etc/security/access.conf:# non-networked logins), host names, domain names (begin with "."), host
+/etc/security/access.conf:# addresses, internet network numbers (end with "."), ALL (always
+/etc/security/access.conf:# matches), NONE (matches no tty on non-networked logins) or
+/etc/security/access.conf:# User "root" should get access from network 192.168.201.
+/etc/security/access.conf:# comment: It might be better to use network/netmask instead.
+grep: /etc/security/opasswd: Permission denied
+/etc/sysctl.d/99-sysctl.conf:# Additional settings - these settings can improve the network
+/etc/sysctl.d/99-sysctl.conf:# security of the host and prevent against some network attacks
+/etc/sysctl.d/99-sysctl.conf:# redirection. Some network environments, however, require that these
+grep: /etc/credstore: Permission denied
+/etc/modprobe.d/blacklist-rare-network.conf:# Many less commonly used network protocols have recently had various
+/etc/modprobe.d/blacklist.conf:# causes no end of confusion by creating unexpected network interfaces
+/etc/hosts:# [network]
+/etc/cloud/cloud.cfg.d/99_wsl.cfg:network:
+/etc/cloud/templates/chrony.conf.photon.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/ntp.conf.almalinux.tmpl:# Hosts on local network are less restricted.
+/etc/cloud/templates/chrony.conf.cloudlinux.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/ntp.conf.fedora.tmpl:# Hosts on local network are less restricted.
+/etc/cloud/templates/ntp.conf.rhel.tmpl:# Hosts on local network are less restricted.
+/etc/cloud/templates/chrony.conf.sle-micro.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/ntp.conf.debian.tmpl:# next lines.  Please do this only if you trust everybody on the network!
+/etc/cloud/templates/chrony.conf.almalinux.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/chrony.conf.opensuse-leap.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/chrony.conf.rocky.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/ntp.conf.freebsd.tmpl:# be configured on just one server on a network. For more details see
+/etc/cloud/templates/chrony.conf.opensuse.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/chrony.conf.sle_hpc.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/chrony.conf.centos.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/chrony.conf.sles.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/chrony.conf.fedora.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/ntp.conf.rocky.tmpl:# Hosts on local network are less restricted.
+/etc/cloud/templates/chrony.conf.freebsd.tmpl:# On Linux, if the network interface controller and its driver support
+/etc/cloud/templates/chrony.conf.rhel.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/ntp.conf.cloudlinux.tmpl:# Hosts on local network are less restricted.
+/etc/cloud/templates/ntp.conf.photon.tmpl:# Hosts on local network are less restricted.
+/etc/cloud/templates/chrony.conf.opensuse-tumbleweed.tmpl:# Allow NTP client access from local network.
+/etc/cloud/templates/ntp.conf.ubuntu.tmpl:# next lines.  Please do this only if you trust everybody on the network!
+/etc/cloud/templates/chrony.conf.opensuse-microos.tmpl:# Allow NTP client access from local network.
+/etc/cloud/cloud.cfg:  network:
+/etc/cloud/cloud.cfg:    activators: ['netplan', 'eni', 'network-manager', 'networkd']
+grep: /etc/alternatives/nc: binary file matches
+grep: /etc/alternatives/netcat: binary file matches
+grep: /etc/sudoers.d/README: Permission denied
+/etc/systemd/networkd.conf:# the /etc/systemd/networkd.conf.d/ directory. The latter is generally
+/etc/systemd/networkd.conf:# Use 'systemd-analyze cat-config systemd/networkd.conf' to display the full config.
+/etc/systemd/networkd.conf:# See networkd.conf(5) for details.
+/etc/systemd/user/sockets.target.wants/dirmngr.socket:Description=GnuPG network certificate management daemon
+/etc/systemd/system/dbus-org.freedesktop.resolve1.service:Documentation=https://www.freedesktop.org/wiki/Software/systemd/writing-network-configuration-managers
+/etc/systemd/system/dbus-org.freedesktop.resolve1.service:Before=sysinit.target network.target nss-lookup.target shutdown.target initrd-switch-root.target
+/etc/systemd/system/dbus-org.freedesktop.resolve1.service:ImportCredential=network.dns
+/etc/systemd/system/dbus-org.freedesktop.resolve1.service:ImportCredential=network.search_domains
+/etc/systemd/system/cloud-init.target.wants/cloud-init.service:After=systemd-networkd-wait-online.service
+/etc/systemd/system/cloud-init.target.wants/cloud-init.service:After=networking.service
+/etc/systemd/system/cloud-init.target.wants/cloud-init.service:Before=network-online.target
+/etc/systemd/system/cloud-init.target.wants/cloud-init-local.service:Description=Cloud-init: Local Stage (pre-network)
+/etc/systemd/system/cloud-init.target.wants/cloud-init-local.service:Wants=network-pre.target
+/etc/systemd/system/cloud-init.target.wants/cloud-init-local.service:Before=network-pre.target
+/etc/systemd/system/cloud-init.target.wants/cloud-final.service:After=network-online.target time-sync.target cloud-config.service rc-local.service
+/etc/systemd/system/cloud-init.target.wants/cloud-final.service:Wants=network-online.target cloud-config.service
+/etc/systemd/system/cloud-init.target.wants/cloud-config.service:After=network-online.target cloud-config.target
+/etc/systemd/system/cloud-init.target.wants/cloud-config.service:Wants=network-online.target cloud-config.target
+/etc/systemd/system/sysinit.target.wants/systemd-resolved.service:Documentation=https://www.freedesktop.org/wiki/Software/systemd/writing-network-configuration-managers
+/etc/systemd/system/sysinit.target.wants/systemd-resolved.service:Before=sysinit.target network.target nss-lookup.target shutdown.target initrd-switch-root.target
+/etc/systemd/system/sysinit.target.wants/systemd-resolved.service:ImportCredential=network.dns
+/etc/systemd/system/sysinit.target.wants/systemd-resolved.service:ImportCredential=network.search_domains
+/etc/systemd/system/cloud-config.target.wants/cloud-init-hotplugd.socket:# /run/cloud-init/hook-hotplug-cmd which is created during a udev network
+/etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service:Description=Dispatcher daemon for systemd-networkd
+/etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service:ConditionPathExistsGlob=|/etc/networkd-dispatcher/*/*
+/etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service:ConditionPathExistsGlob=|/usr/lib/networkd-dispatcher/*/*
+/etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service:ExecStart=/usr/bin/networkd-dispatcher $networkd_dispatcher_args
+/etc/systemd/system/multi-user.target.wants/networkd-dispatcher.service:# Load /etc/default/networkd-dispatcher
+/etc/systemd/system/multi-user.target.wants/unattended-upgrades.service:After=network.target local-fs.target systemd-logind.service
+/etc/systemd/system/multi-user.target.wants/ubuntu-advantage.service:After=network.target network-online.target systemd-networkd.service ua-auto-attach.service ubuntu-advantage-cloud-id-shim.service
+/etc/default/networkd-dispatcher:networkd_dispatcher_args="--run-startup-triggers"
+grep: /etc/.pwd.lock: Permission denied
+/etc/rc2.d/S01cron:# Should-Start:      $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/rc2.d/S01cron:# Should-Stop:       $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/logcheck/ignore.d.server/gpg-agent:^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Listening on GnuPG network certificate management daemon\.$
+/etc/logcheck/ignore.d.server/gpg-agent:^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[[[:digit:]]+\]: Closed GnuPG network certificate management daemon\.$
+grep: /etc/shadow-: Permission denied
+/etc/netconfig:# The network configuration file. This file is currently only used in
+/etc/netconfig:#       <network_id> <semantics> <flags> <protofamily> <protoname> \
+grep: /etc/ssl/private: Permission denied
+/etc/networks:# symbolic names for networks, see networks(5) for more information
+grep: /etc/polkit-1/rules.d: Permission denied
+/etc/apparmor.d/ubuntu_pro_esm_cache:    network inet stream,
+/etc/apparmor.d/ubuntu_pro_esm_cache:    network inet6 stream,
+/etc/apparmor.d/abstractions/transmission-common:  network inet    dgram,
+/etc/apparmor.d/abstractions/transmission-common:  network inet6   dgram,
+/etc/apparmor.d/abstractions/transmission-common:  network netlink dgram,
+/etc/apparmor.d/abstractions/transmission-common:  network inet    stream,
+/etc/apparmor.d/abstractions/transmission-common:  network inet6   stream,
+/etc/apparmor.d/abstractions/apache2-common:  network inet stream,
+/etc/apparmor.d/abstractions/apache2-common:  network inet6 stream,
+/etc/apparmor.d/abstractions/ubuntu-browsers.d/java:    network inet stream,
+/etc/apparmor.d/abstractions/ubuntu-browsers.d/java:    network inet6 stream,
+/etc/apparmor.d/abstractions/ubuntu-browsers.d/java:    network inet stream,
+/etc/apparmor.d/abstractions/ubuntu-browsers.d/java:    network inet6 stream,
+/etc/apparmor.d/abstractions/dbus-network-manager-strict:  include if exists <abstractions/dbus-network-manager-strict.d>
+/etc/apparmor.d/abstractions/kde-open5:  include <abstractions/dbus-network-manager-strict>
+/etc/apparmor.d/abstractions/ubuntu-helpers:  # Allow all networking
+/etc/apparmor.d/abstractions/ubuntu-helpers:  network inet,
+/etc/apparmor.d/abstractions/ubuntu-helpers:  network inet6,
+/etc/apparmor.d/abstractions/nameservice:  # to vast speed increases when working with network-based lookups.
+/etc/apparmor.d/abstractions/nameservice:  # TCP/UDP network access
+/etc/apparmor.d/abstractions/nameservice:  network inet  stream,
+/etc/apparmor.d/abstractions/nameservice:  network inet6 stream,
+/etc/apparmor.d/abstractions/nameservice:  network inet  dgram,
+/etc/apparmor.d/abstractions/nameservice:  network inet6 dgram,
+/etc/apparmor.d/abstractions/nameservice:  network netlink raw,
+/etc/apparmor.d/abi/3.0:network {af_unix {yes
+/etc/apparmor.d/abi/3.0:network_v8 {af_mask {unspec unix inet ax25 ipx appletalk netrom bridge atmpvc x25 inet6 rose netbeui security key netlink packet ash econet atmsvc rds sna irda pppox wanpipe llc ib mpls can tipc bluetooth iucv rxrpc isdn phonet ieee802154 caif alg nfc vsock kcm qipcrtr smc xdp
+/etc/apparmor.d/abi/4.0:network {af_mask {unspec unix inet ax25 ipx appletalk netrom bridge atmpvc x25 inet6 rose netbeui security key netlink packet ash econet atmsvc rds sna irda pppox wanpipe llc ib mpls can tipc bluetooth iucv rxrpc isdn phonet ieee802154 caif alg nfc vsock kcm qipcrtr smc xdp mctp
+/etc/apparmor.d/abi/4.0:network_v8 {af_mask {unspec unix inet ax25 ipx appletalk netrom bridge atmpvc x25 inet6 rose netbeui security key netlink packet ash econet atmsvc rds sna irda pppox wanpipe llc ib mpls can tipc bluetooth iucv rxrpc isdn phonet ieee802154 caif alg nfc vsock kcm qipcrtr smc xdp mctp
+/etc/apparmor.d/abi/kernel-5.4-outoftree-network:network {af_unix {yes
+/etc/apparmor.d/plasmashell:  network,
+/etc/apparmor.d/plasmashell:    network,
+/etc/apparmor.d/unix-chkpwd:  network netlink raw,
+/etc/apparmor.d/unprivileged_userns:     allow network,
+/etc/apparmor.d/transmission:  network inet  dgram,
+/etc/apparmor.d/transmission:  network inet6 dgram,
+/etc/apparmor.d/transmission:  network inet  stream,
+/etc/apparmor.d/transmission:  network inet6 stream,
+/etc/apparmor.d/transmission:  include <abstractions/dbus-network-manager-strict>
+/etc/sudo.conf:# By default, sudo will probe the system's network interfaces and
+grep: /etc/gshadow: Permission denied
+/etc/rc5.d/S01cron:# Should-Start:      $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/rc5.d/S01cron:# Should-Stop:       $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/sysctl.conf:# Additional settings - these settings can improve the network
+/etc/sysctl.conf:# security of the host and prevent against some network attacks
+/etc/sysctl.conf:# redirection. Some network environments, however, require that these
+/etc/apparmor/parser.conf:## Pin older policy to the 5.4 kernel abi + out of tree network and af_unix
+/etc/apparmor/parser.conf:#policy-features=/etc/apparmor.d/abi/kernel-5.4-outoftree-network
+/etc/mime.types:application/alto-networkmap+json
+/etc/mime.types:application/alto-networkmapfilter+json
+/etc/mime.types:application/vnd.3gpp.seal-network-QoS-management-info+xml
+/etc/mime.types:application/vnd.aristanetworks.swi              swi
+/etc/resolv.conf:# [network]
+/etc/passwd:systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+grep: /etc/shadow: Permission denied
+grep: /etc/landscape/client.conf: Permission denied
+/etc/init.d/procps:# X-Start-Before:    $network
+/etc/init.d/cron:# Should-Start:      $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/init.d/cron:# Should-Stop:       $network $named slapd autofs ypbind nscd nslcd winbind sssd
+grep: /etc/credstore.encrypted: Permission denied
+grep: /etc/sudoers: Permission denied
+/etc/dhcpcd.conf:# Respect the network MTU. This is applied to DHCP routes.
+/etc/dhcpcd.conf:# Request a hostname from the network
+grep: /etc/gshadow-: Permission denied
+/etc/rc4.d/S01cron:# Should-Start:      $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/rc4.d/S01cron:# Should-Stop:       $network $named slapd autofs ypbind nscd nslcd winbind sssd
+/etc/passwd-:systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+/etc/services:sane-port 6566/tcp        sane saned      # SANE network scanner daemon
+sadaf@DESKTOP-DB77T0U:~$
+======================================================================
+Exercise-3
+
+Create a file:
+Write:
+Name: xxxxxxxx
+Role: xxxxxxxx
+Linux Training: xxx yyy  aaa
+
+Save and exit.
+View file:
+
+
+sadaf@DESKTOP-DB77T0U:~$ nano bio.txt
+sadaf@DESKTOP-DB77T0U:~$ cat bio.txt
+Name:Sadaf
+Role:Devloper
+Linux Training:Basic Commands Practice
+
+sadaf@DESKTOP-DB77T0U:~$
+============================================
+Exercise-4
+
+
+sadaf@DESKTOP-DB77T0U:~$ vim linux-notes.txt
+sadaf@DESKTOP-DB77T0U:~$ cat linux-notes.txt
+Linux is powerful
+Vim is fast
+sadaf@DESKTOP-DB77T0U:~$
+=====================================================================================================
+
+					File Permissions, chmod and chgrp 
+
+Exercise 1: Basic chmod
+Task
+
+
+sadaf@DESKTOP-DB77T0U:~$ touch test.txt
+sadaf@DESKTOP-DB77T0U:~$ chmod 600 test.txt
+sadaf@DESKTOP-DB77T0U:~$ cat test.txt
+sadaf@DESKTOP-DB77T0U:~$ ls test.txt
+test.txt
+sadaf@DESKTOP-DB77T0U:~$ ls-l test.txt
+ls-l: command not found
+sadaf@DESKTOP-DB77T0U:~$ ls -l test.txt
+-rw------- 1 sadaf sadaf 0 Mar 29 07:37 test.txt
+sadaf@DESKTOP-DB77T0U:~$
+===========================
+Exercise 2: Make Script Executable
+Task
+
+Create script.sh
+Allow everyone to execute
+
+sadaf@DESKTOP-DB77T0U:~$ touch script.sh
+sadaf@DESKTOP-DB77T0U:~$ chmod a+x script.sh
+sadaf@DESKTOP-DB77T0U:~$
+=======================================
+Exercise 3: Numeric Permissions
+Task
+Set permissions:
+Owner → read, write, execute
+Group → read
+Others → no acces
+sadaf@DESKTOP-DB77T0U:~$ ls -l script.sh
+-rwxr----- 1 sadaf sadaf 0 Mar 29 07:43 script.sh
+sadaf@DESKTOP-DB77T0U:~$
+==============================================
+Exercise 4: Remove Permissions
+Task
+Remove execute permission from all
+
+sadaf@DESKTOP-DB77T0U:~$ chmod a-x script.sh
+sadaf@DESKTOP-DB77T0U:~$ ls -l script.sh
+-rw-r----- 1 sadaf sadaf 0 Mar 29 07:43 script.sh
+sadaf@DESKTOP-DB77T0U:~$
+==============================================
+Exercise 6: Combined Task
+
+sadaf@DESKTOP-DB77T0U:~$ touch app.sh
+sadaf@DESKTOP-DB77T0U:~$ chmod a+x app.sh
+sadaf@DESKTOP-DB77T0U:~$ chmod 755 app.sh
+sadaf@DESKTOP-DB77T0U:~$ chgrp dev app.sh
+chgrp: invalid group: ‘dev’
+sadaf@DESKTOP-DB77T0U:~$
+============================================
+Exercise 7 
+Task
+Create file secret.txt
+Only owner should read/write
+No access to others
+
+sadaf@DESKTOP-DB77T0U:~$ touch secret.txt
+sadaf@DESKTOP-DB77T0U:~$ chmod 600 secret.txt
+sadaf@DESKTOP-DB77T0U:~$ ls -l secret.txt
+-rw------- 1 sadaf sadaf 0 Mar 29 08:26 secret.txt
+sadaf@DESKTOP-DB77T0U:~$
+=================================================================================================
+						Inodes, Symlinks and Hardlinks
+
+sadaf@DESKTOP-DB77T0U:~$ ls -i test.txt
+46451 test.txt
+sadaf@DESKTOP-DB77T0U:~$ ln test.txt hardlink.txt
+sadaf@DESKTOP-DB77T0U:~$ ls -li
+total 24
+46439 -rwxr-xr-x 1 sadaf sadaf    0 Mar 29 08:17 app.sh
+46483 -rw-r--r-- 1 sadaf sadaf   65 Mar 29 07:13 bio.txt
+46450 -rwxr--r-- 1 sadaf sadaf    0 Mar 27 10:09 file.sh
+46451 -rw------- 2 sadaf sadaf    0 Mar 29 07:37 hardlink.txt
+46461 drwxr-xr-x 3 sadaf sadaf 4096 Mar 28 15:46 lab
+46452 -rw-r--r-- 1 sadaf sadaf    0 Mar 27 15:43 linux
+46484 -rw-r--r-- 1 sadaf sadaf   30 Mar 29 07:20 linux-notes.txt
+46454 -rw-r--r-- 1 sadaf sadaf   23 Mar 27 15:45 myfolder
+46455 -rw-r--r-- 1 sadaf sadaf   36 Mar 27 15:46 myfolder.txt
+46421 drwxr-xr-x 2 sadaf sadaf 4096 Mar 28 15:04 myfolder1
+46482 -rw-r----- 1 sadaf sadaf    0 Mar 29 07:43 script.sh
+46486 -rw------- 1 sadaf sadaf    0 Mar 29 08:26 secret.txt
+46451 -rw------- 2 sadaf sadaf    0 Mar 29 07:37 test.txt
+sadaf@DESKTOP-DB77T0U:~$
+=============================================================================
+
+
+Hands-on Example 
+
+sadaf@DESKTOP-DB77T0U:~$ echo "Hello Linux" > file.txt
+sadaf@DESKTOP-DB77T0U:~$ cat file.txt
+Hello Linux
+sadaf@DESKTOP-DB77T0U:~$ ln file.txt hard.txt
+sadaf@DESKTOP-DB77T0U:~$ ln -s file.txt soft.txt
+sadaf@DESKTOP-DB77T0U:~$ ls -li
+total 32
+46439 -rwxr-xr-x 1 sadaf sadaf    0 Mar 29 08:17 app.sh
+46483 -rw-r--r-- 1 sadaf sadaf   65 Mar 29 07:13 bio.txt
+46450 -rwxr--r-- 1 sadaf sadaf    0 Mar 27 10:09 file.sh
+46487 -rw-r--r-- 2 sadaf sadaf   12 Mar 29 08:41 file.txt
+46487 -rw-r--r-- 2 sadaf sadaf   12 Mar 29 08:41 hard.txt
+46451 -rw------- 2 sadaf sadaf    0 Mar 29 07:37 hardlink.txt
+46461 drwxr-xr-x 3 sadaf sadaf 4096 Mar 28 15:46 lab
+46452 -rw-r--r-- 1 sadaf sadaf    0 Mar 27 15:43 linux
+46484 -rw-r--r-- 1 sadaf sadaf   30 Mar 29 07:20 linux-notes.txt
+46454 -rw-r--r-- 1 sadaf sadaf   23 Mar 27 15:45 myfolder
+46455 -rw-r--r-- 1 sadaf sadaf   36 Mar 27 15:46 myfolder.txt
+46421 drwxr-xr-x 2 sadaf sadaf 4096 Mar 28 15:04 myfolder1
+46482 -rw-r----- 1 sadaf sadaf    0 Mar 29 07:43 script.sh
+46486 -rw------- 1 sadaf sadaf    0 Mar 29 08:26 secret.txt
+46489 lrwxrwxrwx 1 sadaf sadaf    8 Mar 29 08:43 soft.txt -> file.txt
+46451 -rw------- 2 sadaf sadaf    0 Mar 29 07:37 test.txt
+sadaf@DESKTOP-DB77T0U:~$ rm file.txt
+sadaf@DESKTOP-DB77T0U:~$ cat hard.txt
+Hello Linux
+sadaf@DESKTOP-DB77T0U:~$ cat soft.txt
+cat: soft.txt: No such file or directory
+sadaf@DESKTOP-DB77T0U:~$

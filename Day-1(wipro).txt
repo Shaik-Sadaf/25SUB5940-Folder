@@ -1,0 +1,21 @@
+x=5--->500
+y=6---->501
+z=x*y---->z at 300
+ Load 500
+------
+CIR=500,pc=501
+CIR->MAR=500,MDR=5
+MDR->AC=(5)
+
+----MUL 501
+CIR=501,PC=300
+MAR=501,MDR=6
+AC=AC*MDR=>5*6=30
+-----
+STORE 300
+
+CIR=300 PC ADD OF NEXT INSTRUCTION
+MAR=300,AC=>MDR=3=
+MDR=>main memory at address 300
+
+
